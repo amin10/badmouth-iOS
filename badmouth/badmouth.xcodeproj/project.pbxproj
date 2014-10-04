@@ -17,6 +17,21 @@
 		38520F2C19E0817500342DD0 /* badmouthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38520F2B19E0817500342DD0 /* badmouthTests.m */; };
 		38520F3719E0823200342DD0 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38520F3519E0823200342DD0 /* Bolts.framework */; };
 		38520F3819E0823200342DD0 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38520F3619E0823200342DD0 /* Parse.framework */; };
+		38520F3A19E082DD00342DD0 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38520F3919E082DD00342DD0 /* Accounts.framework */; };
+		38520F3C19E082ED00342DD0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38520F3B19E082ED00342DD0 /* AudioToolbox.framework */; };
+		38520F3E19E0832C00342DD0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38520F3D19E0832C00342DD0 /* CFNetwork.framework */; };
+		38520F4019E0833A00342DD0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38520F3F19E0833A00342DD0 /* CoreGraphics.framework */; };
+		38520F4219E0835000342DD0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38520F4119E0835000342DD0 /* CoreLocation.framework */; };
+		38520F4419E083C700342DD0 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38520F4319E083C700342DD0 /* MobileCoreServices.framework */; };
+		38520F4619E083D200342DD0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38520F4519E083D200342DD0 /* QuartzCore.framework */; };
+		38520F4819E083E500342DD0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38520F4719E083E500342DD0 /* Security.framework */; };
+		38520F4A19E083F400342DD0 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38520F4919E083F400342DD0 /* Social.framework */; };
+		38520F4C19E0840200342DD0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38520F4B19E0840200342DD0 /* StoreKit.framework */; };
+		38520F4E19E0840E00342DD0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38520F4D19E0840D00342DD0 /* SystemConfiguration.framework */; };
+		38520F5B19E086AB00342DD0 /* BNRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38520F5319E086AA00342DD0 /* BNRViewController.xib */; };
+		38520F5C19E086AB00342DD0 /* BNRWelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38520F5919E086AB00342DD0 /* BNRWelcomeViewController.xib */; };
+		38520F6019E08C7C00342DD0 /* badMouthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38520F5E19E08C7C00342DD0 /* badMouthViewController.m */; };
+		38520F6119E08C7C00342DD0 /* badMouthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38520F5F19E08C7C00342DD0 /* badMouthViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +62,26 @@
 		38520F2B19E0817500342DD0 /* badmouthTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = badmouthTests.m; sourceTree = "<group>"; };
 		38520F3519E0823200342DD0 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../parse-library-1.4.1/Bolts.framework"; sourceTree = "<group>"; };
 		38520F3619E0823200342DD0 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../parse-library-1.4.1/Parse.framework"; sourceTree = "<group>"; };
+		38520F3919E082DD00342DD0 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		38520F3B19E082ED00342DD0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		38520F3D19E0832C00342DD0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		38520F3F19E0833A00342DD0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		38520F4119E0835000342DD0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		38520F4319E083C700342DD0 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		38520F4519E083D200342DD0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		38520F4719E083E500342DD0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		38520F4919E083F400342DD0 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		38520F4B19E0840200342DD0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		38520F4D19E0840D00342DD0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		38520F5019E086AA00342DD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Base; path = Base.lproj/BNRViewController.h; sourceTree = "<group>"; };
+		38520F5219E086AA00342DD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Base; path = Base.lproj/BNRViewController.m; sourceTree = "<group>"; };
+		38520F5419E086AA00342DD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/BNRViewController.xib; sourceTree = "<group>"; };
+		38520F5619E086AB00342DD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Base; path = Base.lproj/BNRWelcomeViewController.h; sourceTree = "<group>"; };
+		38520F5819E086AB00342DD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Base; path = Base.lproj/BNRWelcomeViewController.m; sourceTree = "<group>"; };
+		38520F5A19E086AB00342DD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/BNRWelcomeViewController.xib; sourceTree = "<group>"; };
+		38520F5D19E08C7C00342DD0 /* badMouthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = badMouthViewController.h; sourceTree = "<group>"; };
+		38520F5E19E08C7C00342DD0 /* badMouthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = badMouthViewController.m; sourceTree = "<group>"; };
+		38520F5F19E08C7C00342DD0 /* badMouthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = badMouthViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +89,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38520F4E19E0840E00342DD0 /* SystemConfiguration.framework in Frameworks */,
+				38520F4C19E0840200342DD0 /* StoreKit.framework in Frameworks */,
+				38520F4A19E083F400342DD0 /* Social.framework in Frameworks */,
+				38520F4819E083E500342DD0 /* Security.framework in Frameworks */,
+				38520F4619E083D200342DD0 /* QuartzCore.framework in Frameworks */,
+				38520F4419E083C700342DD0 /* MobileCoreServices.framework in Frameworks */,
+				38520F4219E0835000342DD0 /* CoreLocation.framework in Frameworks */,
+				38520F4019E0833A00342DD0 /* CoreGraphics.framework in Frameworks */,
+				38520F3E19E0832C00342DD0 /* CFNetwork.framework in Frameworks */,
+				38520F3C19E082ED00342DD0 /* AudioToolbox.framework in Frameworks */,
+				38520F3A19E082DD00342DD0 /* Accounts.framework in Frameworks */,
 				38520F3819E0823200342DD0 /* Parse.framework in Frameworks */,
 				38520F3719E0823200342DD0 /* Bolts.framework in Frameworks */,
 			);
@@ -72,6 +118,17 @@
 		38520F0019E0817500342DD0 = {
 			isa = PBXGroup;
 			children = (
+				38520F4D19E0840D00342DD0 /* SystemConfiguration.framework */,
+				38520F4B19E0840200342DD0 /* StoreKit.framework */,
+				38520F4919E083F400342DD0 /* Social.framework */,
+				38520F4719E083E500342DD0 /* Security.framework */,
+				38520F4519E083D200342DD0 /* QuartzCore.framework */,
+				38520F4319E083C700342DD0 /* MobileCoreServices.framework */,
+				38520F4119E0835000342DD0 /* CoreLocation.framework */,
+				38520F3F19E0833A00342DD0 /* CoreGraphics.framework */,
+				38520F3D19E0832C00342DD0 /* CFNetwork.framework */,
+				38520F3B19E082ED00342DD0 /* AudioToolbox.framework */,
+				38520F3919E082DD00342DD0 /* Accounts.framework */,
 				38520F3519E0823200342DD0 /* Bolts.framework */,
 				38520F3619E0823200342DD0 /* Parse.framework */,
 				38520F0B19E0817500342DD0 /* badmouth */,
@@ -92,6 +149,15 @@
 		38520F0B19E0817500342DD0 /* badmouth */ = {
 			isa = PBXGroup;
 			children = (
+				38520F4F19E086AA00342DD0 /* BNRViewController.h */,
+				38520F5119E086AA00342DD0 /* BNRViewController.m */,
+				38520F5D19E08C7C00342DD0 /* badMouthViewController.h */,
+				38520F5E19E08C7C00342DD0 /* badMouthViewController.m */,
+				38520F5F19E08C7C00342DD0 /* badMouthViewController.xib */,
+				38520F5319E086AA00342DD0 /* BNRViewController.xib */,
+				38520F5519E086AB00342DD0 /* BNRWelcomeViewController.h */,
+				38520F5719E086AB00342DD0 /* BNRWelcomeViewController.m */,
+				38520F5919E086AB00342DD0 /* BNRWelcomeViewController.xib */,
 				38520F1019E0817500342DD0 /* AppDelegate.h */,
 				38520F1119E0817500342DD0 /* AppDelegate.m */,
 				38520F1619E0817500342DD0 /* MasterViewController.h */,
@@ -212,8 +278,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38520F5B19E086AB00342DD0 /* BNRViewController.xib in Resources */,
 				38520F1E19E0817500342DD0 /* Main.storyboard in Resources */,
+				38520F5C19E086AB00342DD0 /* BNRWelcomeViewController.xib in Resources */,
 				38520F2019E0817500342DD0 /* Images.xcassets in Resources */,
+				38520F6119E08C7C00342DD0 /* badMouthViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +304,7 @@
 				38520F1819E0817500342DD0 /* MasterViewController.m in Sources */,
 				38520F1219E0817500342DD0 /* AppDelegate.m in Sources */,
 				38520F0F19E0817500342DD0 /* main.m in Sources */,
+				38520F6019E08C7C00342DD0 /* badMouthViewController.m in Sources */,
 				38520F1519E0817500342DD0 /* badmouth.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +334,54 @@
 				38520F1D19E0817500342DD0 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		38520F4F19E086AA00342DD0 /* BNRViewController.h */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38520F5019E086AA00342DD0 /* Base */,
+			);
+			name = BNRViewController.h;
+			sourceTree = "<group>";
+		};
+		38520F5119E086AA00342DD0 /* BNRViewController.m */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38520F5219E086AA00342DD0 /* Base */,
+			);
+			name = BNRViewController.m;
+			sourceTree = "<group>";
+		};
+		38520F5319E086AA00342DD0 /* BNRViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38520F5419E086AA00342DD0 /* Base */,
+			);
+			name = BNRViewController.xib;
+			sourceTree = "<group>";
+		};
+		38520F5519E086AB00342DD0 /* BNRWelcomeViewController.h */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38520F5619E086AB00342DD0 /* Base */,
+			);
+			name = BNRWelcomeViewController.h;
+			sourceTree = "<group>";
+		};
+		38520F5719E086AB00342DD0 /* BNRWelcomeViewController.m */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38520F5819E086AB00342DD0 /* Base */,
+			);
+			name = BNRWelcomeViewController.m;
+			sourceTree = "<group>";
+		};
+		38520F5919E086AB00342DD0 /* BNRWelcomeViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38520F5A19E086AB00342DD0 /* Base */,
+			);
+			name = BNRWelcomeViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

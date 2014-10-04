@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "DetailViewController.h"
 #import "MasterViewController.h"
+#import <Parse/Parse.h>
 
 @interface AppDelegate () <UISplitViewControllerDelegate>
 
@@ -23,6 +24,9 @@
     UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
     navigationController.topViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem;
     splitViewController.delegate = self;
+    [Parse setApplicationId:@"s32blhuMK0fzjARmluinIoP7GMNCsWXPsREdsFhD"
+                  clientKey:@"dBMVKhUnoFW8kHZzXbVXAc9E0qVrZVfjcfH5J5EQ"];
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
 
     UINavigationController *masterNavigationController = splitViewController.viewControllers[0];
     MasterViewController *controller = (MasterViewController *)masterNavigationController.topViewController;
