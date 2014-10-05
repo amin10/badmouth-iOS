@@ -10,6 +10,7 @@
 #import "DetailViewController.h"
 #import "MasterViewController.h"
 #import <Parse/Parse.h>
+#import "badMouthViewController.h"
 
 @interface AppDelegate () <UISplitViewControllerDelegate>
 
@@ -20,17 +21,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
-    UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
-    navigationController.topViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem;
-    splitViewController.delegate = self;
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    badMouthViewController *badmouth = [[badMouthViewController alloc] init];
+    self.window.rootViewController = badmouth;
     [Parse setApplicationId:@"s32blhuMK0fzjARmluinIoP7GMNCsWXPsREdsFhD"
                   clientKey:@"dBMVKhUnoFW8kHZzXbVXAc9E0qVrZVfjcfH5J5EQ"];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
-
-    UINavigationController *masterNavigationController = splitViewController.viewControllers[0];
-    MasterViewController *controller = (MasterViewController *)masterNavigationController.topViewController;
-    controller.managedObjectContext = self.managedObjectContext;
     return YES;
 }
 
