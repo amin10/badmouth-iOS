@@ -6,12 +6,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="badMouthViewController">
             <connections>
-                <outlet property="badmouth" destination="YvS-rx-OrL" id="TUe-1G-CrH"/>
-                <outlet property="submitButton" destination="5Qq-8C-Lxt" id="ocY-cs-rnp"/>
+                <outlet property="badmouth" destination="kii-Qy-nSa" id="Tn5-om-w1e"/>
+                <outlet property="cancelButton" destination="bVR-jD-ljc" id="nI2-3s-qTA"/>
+                <outlet property="instructionLabel" destination="FMu-l6-96z" id="bHw-7n-oa6"/>
+                <outlet property="submitButton" destination="gDd-8G-wUH" id="NPi-Jn-W2r"/>
                 <outlet property="swipeLeft" destination="E9T-s6-XBS" id="l8Q-V8-gkz"/>
                 <outlet property="swipeRight" destination="CGD-Ho-ZYM" id="Tcw-NX-rFD"/>
-                <outlet property="targetCreator" destination="c3v-dw-V3m" id="Y1p-T0-Tsc"/>
-                <outlet property="targetLabel" destination="Z38-de-gUw" id="HBF-u5-gzc"/>
+                <outlet property="targetLabel" destination="Udh-52-0yx" id="phB-ok-LOS"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -26,51 +27,51 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="complain.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cnn-Kk-kgw">
-                    <rect key="frame" x="0.0" y="-7" width="325" height="573"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="complain.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="rOy-Zs-c9e">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What's wrong with :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97d-0b-fgq">
-                    <rect key="frame" x="0.0" y="17" width="175" height="26"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Udh-52-0yx">
+                    <rect key="frame" x="195" y="28" width="117" height="27"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z38-de-gUw">
-                    <rect key="frame" x="168" y="10" width="170" height="33"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YvS-rx-OrL">
-                    <rect key="frame" x="129" y="51" width="191" height="446"/>
-                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDd-8G-wUH">
+                    <rect key="frame" x="32" y="55" width="47" height="30"/>
+                    <state key="normal" title="submit">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="submit:" destination="-1" eventType="touchUpInside" id="EY7-di-Dho"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVR-jD-ljc">
+                    <rect key="frame" x="106" y="55" width="30" height="30"/>
+                    <state key="normal" title="next">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="nextTarget:" destination="-1" eventType="touchUpInside" id="VZZ-Jc-Qxz"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nMH-xK-70w">
+                    <rect key="frame" x="132" y="93" width="165" height="206"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c3v-dw-V3m">
-                    <rect key="frame" x="159" y="15" width="161" height="30"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kii-Qy-nSa">
+                    <rect key="frame" x="158" y="85" width="154" height="340"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ncf-Id-BYz">
-                    <rect key="frame" x="82" y="42" width="32" height="30"/>
-                    <state key="normal" title="Next">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="nextTarget:" destination="-1" eventType="touchUpInside" id="dhK-eh-4dl"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Qq-8C-Lxt">
-                    <rect key="frame" x="0.0" y="42" width="32" height="30"/>
-                    <state key="normal" title="Post">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="submit:" destination="-1" eventType="touchUpInside" id="MwF-1B-ay3"/>
-                    </connections>
-                </button>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What's wrong with:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FMu-l6-96z">
+                    <rect key="frame" x="8" y="26" width="147" height="32"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="0.66537786989795911" green="0.29204202536875606" blue="0.16617496638921947" alpha="1" colorSpace="calibratedRGB"/>
             <gestureRecognizers/>
@@ -82,7 +83,7 @@
             <connections>
                 <outletCollection property="gestureRecognizers" destination="E9T-s6-XBS" appends="YES" id="m4O-XS-MQy"/>
             </connections>
-            <point key="canvasLocation" x="43" y="-43"/>
+            <point key="canvasLocation" x="614" y="-30"/>
         </view>
         <swipeGestureRecognizer direction="right" id="E9T-s6-XBS">
             <connections>
@@ -94,6 +95,15 @@
                 <action selector="handleRight:" destination="-1" id="jnF-xk-MEO"/>
             </connections>
         </swipeGestureRecognizer>
+        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="YvS-rx-OrL">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+            <point key="canvasLocation" x="472" y="26"/>
+        </textView>
     </objects>
     <resources>
         <image name="complain.jpg" width="300" height="338"/>
