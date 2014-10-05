@@ -20,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *targetCreator;
 @property (weak, nonatomic) IBOutlet UIButton *cancelButton;
 @property(strong,nonatomic) NSMutableArray *options;
+@property(strong, nonatomic) NSString *targetName;
 @end
 
 @implementation badMouthViewController
@@ -28,36 +29,46 @@
     [self.targetCreator setHidden:false];
 }
 - (IBAction)nextTarget:(id)sender {
-    int op = arc4random()%3;
-    NSString *text = self.options[op];
-    self.targetLabel.text = text;
+    PFQuery *targetQuery = [PFQuery queryWithClassName:@"Target"];
+    [targetQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        int randint = [objects count];
+        int randindex =  arc4random()%randint;
+        PFObject *target = [PFObject objectWithClassName:@"Target"];
+        target = objects[(int)randindex];
+        self.targetLabel.text = [target objectForKey:@"name"];
+    }];
 }
 - (IBAction)submit:(id)sender {
-    PFObject *target = [PFObject objectWithClassName:@"Target"];
-    [target setValue:self.targetLabel.text forKey:@"name"];
-    PFObject *story = [PFObject objectWithClassName:@"Badmouth"];
-    [story setValue:self.badmouth.text forKey:@"text"];
-    PFRelation *badmouths = [target objectForKey:@"badmouths"];
-    [badmouths addObject:story];
-    [target saveInBackground];
-    [story saveInBackground];
-    badMouthViewController *newViewController = [[badMouthViewController alloc] init];
-    [self presentViewController:newViewController animated:YES completion:nil];
+    PFQuery *targetQuery = [PFQuery queryWithClassName:@"Target"];
+    [targetQuery whereKey:@"name" equalTo:self.targetLabel.text];
+    [targetQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        PFObject *target = [PFObject objectWithClassName:@"Target"];
+        target = objects[0];
+        NSLog([target description]);
+        
+        PFObject *badmouth = [PFObject objectWithClassName:@"Badmouth"];
+        [badmouth setValue:self.badmouth.text forKey:@"text"];
+        PFRelation *badmouths = [target objectForKey:@"badmouths"];
+        [badmouths addObject:badmouth];
+        [badmouth saveInBackground];
+        [target saveInBackground];
+        NSLog(@"Saved");
+        badMouthViewController *newViewController = [[badMouthViewController alloc] init];
+        [self presentViewController:newViewController animated:YES completion:nil];
+    }];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:YES];
     [self.targetCreator setHidden:TRUE];
-    self.options = [[NSMutableArray alloc]init];
-    [self.options addObject:@"Google"];
-    [self.options addObject:@"Facebook"];
-    [self.options addObject:@"Obama"];
-    [self.options addObject:@"Uber"];
-    NSLog([self.options description]);
-    int op = arc4random()%3;
-    NSString *text = self.options[op];
-    NSLog(text);
-    self.targetLabel.text=text;
+    PFQuery *targetQuery = [PFQuery queryWithClassName:@"Target"];
+    [targetQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        int randint = [objects count];
+        int randindex =  arc4random()%randint;
+        PFObject *target = [PFObject objectWithClassName:@"Target"];
+        target = objects[(int)randindex];
+        self.targetLabel.text = [target objectForKey:@"name"];
+    }];
 }
 - (void)viewDidLoad {
     self.swipeLeft.direction = UISwipeGestureRecognizerDirectionLeft;
