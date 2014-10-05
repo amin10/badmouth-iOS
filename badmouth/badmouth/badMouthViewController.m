@@ -44,12 +44,8 @@
     [targetQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         PFObject *target = [PFObject objectWithClassName:@"Target"];
         target = objects[0];
-        NSLog([target description]);
-        
         PFObject *badmouth = [PFObject objectWithClassName:@"Badmouth"];
         [badmouth setValue:self.badmouth.text forKey:@"text"];
-        PFRelation *badmouths = [target objectForKey:@"badmouths"];
-        [badmouths addObject:badmouth];
         [badmouth saveInBackground];
         [target saveInBackground];
         NSLog(@"Saved");
